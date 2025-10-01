@@ -1,5 +1,7 @@
 package www.ui.nodes
 
-trait ChildNode {
+import org.scalajs.dom
+
+trait ChildNode[+Ref <: dom.Node] extends ReactiveNode[Ref] {
   
 }

@@ -1,5 +1,11 @@
 package www.ui.nodes
 
-trait ReactiveElement {
+import org.scalajs.dom
+
+trait ReactiveElement[+Ref <: dom.Element] {
   
+}
+
+object ReactiveElement {
+  type Base = ReactiveElement[dom.Element]
 }
